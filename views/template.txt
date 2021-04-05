@@ -1,0 +1,10 @@
+Templates are groups of json files to be used to generate a file given an
+identifier. They are located at ~/.mcgen/templates/<template> containing
+some of the following:
+	item_model.json
+	block_state.json
+	block_model.json
+	block_item_model.json
+	block_loot_table.json
+Using the template will replace the built in template for those file types.
+If multiple template flags are passed, the first passed will have priority.

@@ -1,0 +1,17 @@
+Usage
+	mcgen block [<flag>...] [<path>...]
+		Generates block json at the supplied paths
+	mcgen item [<flag>...] [<path>...]
+		Generates item json at the supplied paths
+	mcgen template
+		Prints available templates and template information
+	mcgen help
+		Prints help
+
+Flags
+	--namespace=<namespace>
+		The default namespace for paths with an unspecified namespace
+	--location=<location>
+		The resource pack root. By default, src/main/resources/
+	--template=<template>
+		The template path to load model templates

@@ -1,0 +1,17 @@
+.dub
+docs.json
+__dummy.html
+docs/
+mcgen.so
+mcgen.dylib
+mcgen.dll
+mcgen.a
+mcgen.lib
+mcgen-test-*
+*.exe
+*.o
+*.obj
+*.lst
+
+src/
+mcgen
