@@ -120,7 +120,7 @@ void main(string[] args) {
 			string path = outputLocation ~ "assets/" ~ id.namespace ~ "/models/item/";
 			mkdirRecurse(path);
 			File f = File(path ~ id.path ~ ".json", "w");
-			f.write(comp.itemModel.replace("NAMESPACE", id.namespace).replace("PATH", id.path));
+			f.write(comp.itemModel.replace("%NAMESPACE", id.namespace).replace("%PATH", id.path));
 			f.close();
 
 			writeln("[mcgen] Created item files for " ~ id.getName());
@@ -136,25 +136,25 @@ void main(string[] args) {
 			string path = outputLocation ~ "assets/" ~ id.namespace ~ "/models/block/";
 			mkdirRecurse(path);
 			File f = File(path ~ id.path ~ ".json", "w");
-			f.write(comp.blockModel.replace("NAMESPACE", id.namespace).replace("PATH", id.path));
+			f.write(comp.blockModel.replace("%NAMESPACE", id.namespace).replace("%PATH", id.path));
 			f.close();
 
 			path = outputLocation ~ "assets/" ~ id.namespace ~ "/blockstates/";
 			mkdirRecurse(path);
 			f = File(path ~ id.path ~ ".json", "w");
-			f.write(comp.blockState.replace("NAMESPACE", id.namespace).replace("PATH", id.path));
+			f.write(comp.blockState.replace("%NAMESPACE", id.namespace).replace("%PATH", id.path));
 			f.close();
 
 			path = outputLocation ~ "data/" ~ id.namespace ~ "/loot_tables/blocks/";
 			mkdirRecurse(path);
 			f = File(path ~ id.path ~ ".json", "w");
-			f.write(comp.blockLootTable.replace("NAMESPACE", id.namespace).replace("PATH", id.path));
+			f.write(comp.blockLootTable.replace("%NAMESPACE", id.namespace).replace("%PATH", id.path));
 			f.close();
 
 			path = outputLocation ~ "assets/" ~ id.namespace ~ "/models/item/";
 			mkdirRecurse(path);
 			f = File(path ~ id.path ~ ".json", "w");
-			f.write(comp.blockItemModel.replace("NAMESPACE", id.namespace).replace("PATH", id.path));
+			f.write(comp.blockItemModel.replace("%NAMESPACE", id.namespace).replace("%PATH", id.path));
 			f.close();
 
 			writeln("[mcgen] Created block files for " ~ id.getName());
