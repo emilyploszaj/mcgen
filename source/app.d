@@ -28,6 +28,7 @@ void main(string[] args) {
 		if (!args[i].startsWith("--")) {
 			flags = args[1..i];
 			objects = args[i..$];
+			break;
 		}
 	}
 	if (flags.length == 0 && objects.length == 0) {
